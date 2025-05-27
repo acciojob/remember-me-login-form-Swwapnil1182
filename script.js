@@ -25,14 +25,14 @@ window.addEventListener("DOMContentLoaded", updateExistingButtonVisibility);
 
 form.addEventListener("submit",(e)=>{
     e.preventDefault()
-    const user=userNameInput.value.trim()
-    const pass=passwordInput.value.trim()
+    const username=userNameInput.value.trim()
+    const password=passwordInput.value.trim()
     
-    alert(`Logged in as ${user}`)
+    alert(`Logged in as ${username}`)
 
     if(checkbox.checked){
-        localStorage.setItem("username", user)
-        localStorage.setItem("password", pass)
+        localStorage.setItem("username", username)
+        localStorage.setItem("password", password)
     }
     else{
         localStorage.removeItem("username")
